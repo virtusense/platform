@@ -3,6 +3,9 @@ project(p8-platform)
 cmake_minimum_required(VERSION 2.8.9)
 enable_language(CXX)
 
+# # 
+set(CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/local")
+# #
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 
 find_package(Threads REQUIRED)
