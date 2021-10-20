@@ -39,7 +39,8 @@ endif()
 
 set(SOURCES src/util/StringUtils.cpp)
 
-add_library(p8-platform ${SOURCES} ${PLAT_SOURCES})
+#add_library(p8-platform ${SOURCES} ${PLAT_SOURCES})
+add_library(p8-platform STATIC ${SOURCES} ${PLAT_SOURCES})
 target_link_libraries(p8-platform ${p8-platform_LIBRARIES})
 set_target_properties(p8-platform
     PROPERTIES
